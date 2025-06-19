@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boosty - الخدمات الرقمية المتقدمة</title>
+    <meta name="description" content="Boosty للخدمات الرقمية - تصميم جرافيكي، خطط Canva Pro، مرسل WhatsApp، جلسات خاصة. أسعار تنافسية وخدمة احترافية.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Language & Currency Controls -->
+    <div class="controls-bar">
+        <div class="language-selector">
+            <select id="languageSelect">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <div class="currency-selector">
+            <select id="currencySelect">
+                <option value="EGP">جنيه مصري</option>
+                <option value="SAR">ريال سعودي</option>
+                <option value="USD">دولار أمريكي</option>
+            </select>
+        </div>
+        <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-key="brand_name">Boosty</h1>
+            <p class="hero-subtitle" data-key="tagline">الخدمات الرقمية المتقدمة</p>
+            <h2 class="hero-heading" data-key="hero_title">أطلق إمكاناتك الرقمية مع Boosty</h2>
+            <p class="hero-description" data-key="hero_subtitle">نقدم خدمات التصميم الجرافيكي، خطط Canva Pro، أدوات التسويق عبر WhatsApp، والاستشارات الخاصة بأعلى جودة وأفضل الأسعار.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToServices()" data-key="explore_services">استكشف الخدمات</button>
+                <button class="btn btn-secondary" onclick="scrollToContact()" data-key="contact_us">تواصل معنا</button>
+            </div>
+        </div>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-key="services_title">خدماتنا المميزة</h2>
+            <p class="section-subtitle" data-key="services_subtitle">اختر من مجموعة شاملة من الخدمات الرقمية المصممة لتلبية احتياجاتك</p>
+            
+            <div class="services-grid">
+                <!-- Graphic Design Service -->
+                <div class="service-card">
+                    <div class="service-gradient gradient-purple"></div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-key="graphic_design">التصميم الجرافيكي</h3>
+                        <p class="service-description" data-key="graphic_design_desc">تصاميم احترافية وإبداعية لجميع احتياجاتك التسويقية والتجارية</p>
+                        <div class="pricing-list">
+                            <div class="price-item">
+                                <span data-key="starting_from">يبدأ من</span>
+                                <span class="price" data-service="graphicDesign">50 جنيه</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/966578786646" target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i> واتساب
+                            </a>
+                            <a href="https://t.me/itoluf0" target="_blank" class="contact-btn telegram">
+                                <i class="fab fa-telegram"></i> تليجرام
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canva Pro Service -->
+                <div class="service-card">
+                    <div class="service-gradient gradient-blue"></div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-key="canva_pro">خطط Canva Pro</h3>
+                        <p class="service-description" data-key="canva_pro_desc">احصل على خطط Canva Pro بأفضل الأسعار مع ضمان الجودة</p>
+                        <div class="pricing-list">
+                            <div class="price-item">
+                                <span data-key="one_month">شهر واحد</span>
+                                <span class="price" data-service="canvaProMonth">30 جنيه</span>
+                            </div>
+                            <div class="price-item">
+                                <span data-key="one_year">سنة واحدة</span>
+                                <span class="price" data-service="canvaProYear">80 جنيه</span>
+                            </div>
+                            <div class="price-item">
+                                <span data-key="three_years">3 سنوات</span>
+                                <span class="price" data-service="canvaProThreeYear">120 جنيه</span>
+                            </div>
+                            <div class="price-item">
+                                <span data-key="lifetime">مدى الحياة</span>
+                                <span class="price" data-service="canvaProLifetime">150 جنيه</span>
+                            </div>
+                            <div class="price-item">
+                                <span data-key="reseller_panel">لوحة الموزع</span>
+                                <span class="price" data-service="canvaProReseller">1300 جنيه</span>
+                            </div>
+                        </div>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/966578786646" target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i> واتساب
+                            </a>
+                            <a href="https://t.me/itoluf0" target="_blank" class="contact-btn telegram">
+                                <i class="fab fa-telegram"></i> تليجرام
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Sender Service -->
+                <div class="service-card whatsapp-service">
+                    <div class="service-gradient gradient-green"></div>
+                    <div class="service-content">
+                        <h3 class="service-title" data-key="whatsapp_sender">مرسل WhatsApp</h3>
+                        <p class="service-description" data-key="whatsapp_sender_desc">أدوات التسويق الاحترافية عبر واتساب لتطوير أعمالك</p>
+                        
+                        <!-- Messages Section -->
+                        <div class="whatsapp-section">
+                            <h4 class="section-heading">باقات الرسائل</h4>
+                            <div class="pricing-list">
+                                <div class="price-item">
+                                    <span>8,000 رسالة</span>
+                                    <span class="price" data-service="whatsapp8k">350 جنيه</span>
+                                </div>
+                                <div class="price-item">
+                                    <span>25,000 رسالة</span>
+                                    <span class="price" data-service="whatsapp25k">650 جنيه</span>
+                                </div>
+                                <div class="price-item">
+                                    <span>60,000 رسالة</span>
+                                    <span class="price" data-service="whatsapp60k">1200 جنيه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Activation Codes Section -->
+                        <div class="whatsapp-section">
+                            <h4 class="section-heading">أكواد التفعيل</h4>
+                            <div class="pricing-list">
+                                <div class="price-item">
+                                    <span data-key="one_month">شهر واحد</span>
+                                    <span class="price" data-service="whatsappActivationMonth">300 جنيه</span>
+                                </div>
+                                <div class="price-item">
+                                    <span data-key="one_year">سنة واحدة</span>
+                                    <span class="price" data-service="whatsappActivationYear">700 جنيه</span>
+                                </div>
+                                <div class="price-item">
+                                    <span data-key="lifetime">مدى الحياة</span>
+                                    <span class="price" data-service="whatsappActivationLifetime">1500 جنيه</span>
+                                </div>
+                                <div class="price-item">
+                                    <span data-key="key_maker_guide">دليل صانع المفاتيح</span>
+                                    <span class="price" data-service="whatsappKeyMaker">2000 جنيه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Private Session Section -->
+                        <div class="whatsapp-section">
+                            <h4 class="section-heading">الجلسة الخاصة</h4>
+                            <div class="pricing-list">
+                                <div class="price-item">
+                                    <span>60 دقيقة عبر AnyDesk</span>
+                                    <span class="price" data-service="privateSession">300 جنيه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/966578786646" target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i> واتساب
+                            </a>
+                            <a href="https://t.me/itoluf0" target="_blank" class="contact-btn telegram">
+                                <i class="fab fa-telegram"></i> تليجرام
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Page Link -->
+    <section class="pricing-link">
+        <div class="container">
+            <div class="pricing-cta">
+                <h3 data-key="view_full_pricing">عرض جدول الأسعار الكامل</h3>
+                <p data-key="pricing_description">تصفح جميع الخدمات والأسعار بالتفصيل</p>
+                <a href="pricing.html" class="btn btn-primary" data-key="view_pricing">عرض الأسعار</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-key="contact_title">تواصل معنا</h2>
+            <p class="section-subtitle" data-key="contact_subtitle">نحن هنا لمساعدتك في تحقيق أهدافك الرقمية</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>واتساب</h4>
+                            <a href="https://wa.me/966578786646" target="_blank">+966578786646</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <div>
+                            <h4>تليجرام</h4>
+                            <a href="https://t.me/itoluf0" target="_blank">@itoluf0</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-tiktok"></i>
+                        <div>
+                            <h4>تيك توك</h4>
+                            <a href="https://tiktok.com/@itoluf0" target="_blank">@itoluf0</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-facebook"></i>
+                        <div>
+                            <h4>فيسبوك</h4>
+                            <a href="https://facebook.com/itoluf0" target="_blank">Boosty</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="الاسم">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="service" placeholder="الخدمة المطلوبة">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder="رسالتك"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-key="send_message">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Boosty</h3>
+                    <p data-key="tagline">الخدمات الرقمية المتقدمة</p>
+                </div>
+                <div class="footer-links">
+                    <a href="pricing.html" data-key="pricing">الأسعار</a>
+                    <a href="#services" data-key="services">الخدمات</a>
+                    <a href="#contact" data-key="contact">تواصل معنا</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-key="owned_by">مملوك لعبدالرحمن الخولي</p>
+                <p data-key="copyright">© 2024 Boosty. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant -->
+    <div id="aiAssistant" class="ai-assistant">
+        <div class="ai-toggle" onclick="toggleAI()">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-chat" id="aiChat">
+            <div class="ai-header">
+                <h4 data-key="ai_assistant">Boosty Bot</h4>
+                <button onclick="toggleAI()" class="close-ai">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="ai-messages" id="aiMessages">
+                <div class="ai-message bot-message">
+                    <span data-key="ai_welcome">أهلاً وسهلاً! أنا Boosty Bot، مساعدك الذكي هنا. يمكنني أساعدك في أي حاجة تخطر على بالك - سواء عن خدمات Boosty أو أي سؤال تاني خالص (طبخ، برمجة، ثقافة، أي حاجة!). إيش اللي محتاج تعرفه النهارده؟</span>
+                </div>
+            </div>
+            <div class="ai-input-area">
+                <input type="text" id="aiInput" placeholder="اكتب رسالتك..." data-key-placeholder="type_message">
+                <button onclick="sendAIMessage()" id="aiSendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
