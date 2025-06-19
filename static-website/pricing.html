@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسعار - Boosty</title>
+    <meta name="description" content="جدول أسعار خدمات Boosty الرقمية - تصميم جرافيكي، خطط Canva Pro، مرسل WhatsApp، جلسات خاصة. أسعار شفافة وتنافسية.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .pricing-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .pricing-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .pricing-hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .pricing-tables {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+        
+        .pricing-category {
+            margin-bottom: 80px;
+        }
+        
+        .category-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        
+        .category-description {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .pricing-table {
+            background: var(--bg-primary);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+        
+        .table-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .table-header h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+        
+        .table-header .gradient-bar {
+            height: 4px;
+            border-radius: 2px;
+            margin: 0 auto 20px;
+            width: 100px;
+        }
+        
+        .price-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .price-grid-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .price-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .price-row:last-child {
+            border-bottom: none;
+        }
+        
+        .service-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .price-cell {
+            text-align: center;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+        
+        .whatsapp-special {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .whatsapp-section {
+            background: var(--bg-primary);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .whatsapp-section h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--accent-blue);
+            padding-bottom: 10px;
+        }
+        
+        .contact-section-pricing {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .contact-section-pricing h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .contact-section-pricing p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .contact-buttons-pricing {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-btn-pricing {
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-btn-pricing:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--accent-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .back-to-home:hover {
+            background: #2563eb;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .price-grid,
+            .price-grid-header,
+            .price-row {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .price-grid-header {
+                display: none;
+            }
+            
+            .price-row {
+                background: var(--bg-secondary);
+                margin-bottom: 10px;
+                border-radius: 10px;
+                border: none;
+                padding: 20px;
+            }
+            
+            .whatsapp-special {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-buttons-pricing {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .pricing-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .category-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Controls Bar -->
+    <div class="controls-bar">
+        <div class="language-selector">
+            <select id="languageSelect">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <div class="currency-selector">
+            <select id="currencySelect">
+                <option value="EGP">جنيه مصري</option>
+                <option value="SAR">ريال سعودي</option>
+                <option value="USD">دولار أمريكي</option>
+            </select>
+        </div>
+        <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Back to Home -->
+    <a href="index.html" class="back-to-home">
+        <i class="fas fa-arrow-right"></i>
+        <span data-key="back_to_home">العودة للرئيسية</span>
+    </a>
+
+    <!-- Pricing Hero -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1 data-key="pricing_title">جدول الأسعار الكامل</h1>
+            <p data-key="pricing_hero_desc">أسعار شفافة وتنافسية لجميع خدماتنا الرقمية. اختر الباقة التي تناسب احتياجاتك وميزانيتك.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Tables -->
+    <section class="pricing-tables">
+        <div class="container">
+            
+            <!-- Graphic Design -->
+            <div class="pricing-category">
+                <h2 class="category-title" data-key="graphic_design">التصميم الجرافيكي</h2>
+                <p class="category-description" data-key="graphic_design_pricing_desc">تصاميم احترافية مخصصة لعلامتك التجارية ومشاريعك</p>
+                
+                <div class="pricing-table">
+                    <div class="table-header">
+                        <h3 data-key="graphic_design">التصميم الجرافيكي</h3>
+                        <div class="gradient-bar gradient-purple"></div>
+                    </div>
+                    
+                    <div class="price-grid-header">
+                        <div data-key="service_type">نوع الخدمة</div>
+                        <div>جنيه مصري</div>
+                        <div>ريال سعودي</div>
+                        <div>دولار أمريكي</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="logo_design">تصميم شعار</div>
+                        <div class="price-cell" data-service="graphicDesign">50 جنيه</div>
+                        <div class="price-cell" data-service="graphicDesign">10 ريال</div>
+                        <div class="price-cell" data-service="graphicDesign">$5</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="social_media_design">تصميم وسائل التواصل</div>
+                        <div class="price-cell">100 جنيه</div>
+                        <div class="price-cell">20 ريال</div>
+                        <div class="price-cell">$10</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="business_card">كارت شخصي</div>
+                        <div class="price-cell">75 جنيه</div>
+                        <div class="price-cell">15 ريال</div>
+                        <div class="price-cell">$7</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="flyer_design">فلاير إعلاني</div>
+                        <div class="price-cell">80 جنيه</div>
+                        <div class="price-cell">16 ريال</div>
+                        <div class="price-cell">$8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canva Pro -->
+            <div class="pricing-category">
+                <h2 class="category-title" data-key="canva_pro">خطط Canva Pro</h2>
+                <p class="category-description" data-key="canva_pro_pricing_desc">احصل على إمكانيات Canva Pro الكاملة بأفضل الأسعار</p>
+                
+                <div class="pricing-table">
+                    <div class="table-header">
+                        <h3 data-key="canva_pro">خطط Canva Pro</h3>
+                        <div class="gradient-bar gradient-blue"></div>
+                    </div>
+                    
+                    <div class="price-grid-header">
+                        <div data-key="plan_duration">مدة الخطة</div>
+                        <div>جنيه مصري</div>
+                        <div>ريال سعودي</div>
+                        <div>دولار أمريكي</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="one_month">شهر واحد</div>
+                        <div class="price-cell" data-service="canvaProMonth">30 جنيه</div>
+                        <div class="price-cell" data-service="canvaProMonth">2.99 ريال</div>
+                        <div class="price-cell" data-service="canvaProMonth">$1</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="one_year">سنة واحدة</div>
+                        <div class="price-cell" data-service="canvaProYear">80 جنيه</div>
+                        <div class="price-cell" data-service="canvaProYear">6.99 ريال</div>
+                        <div class="price-cell" data-service="canvaProYear">$3</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="three_years">3 سنوات</div>
+                        <div class="price-cell" data-service="canvaProThreeYear">120 جنيه</div>
+                        <div class="price-cell" data-service="canvaProThreeYear">9.99 ريال</div>
+                        <div class="price-cell" data-service="canvaProThreeYear">$5</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="lifetime">مدى الحياة</div>
+                        <div class="price-cell" data-service="canvaProLifetime">150 جنيه</div>
+                        <div class="price-cell" data-service="canvaProLifetime">14.99 ريال</div>
+                        <div class="price-cell" data-service="canvaProLifetime">$7</div>
+                    </div>
+                    
+                    <div class="price-row">
+                        <div class="service-name" data-key="reseller_panel">لوحة الموزع (500 مستخدم)</div>
+                        <div class="price-cell" data-service="canvaProReseller">1300 جنيه</div>
+                        <div class="price-cell" data-service="canvaProReseller">100 ريال</div>
+                        <div class="price-cell" data-service="canvaProReseller">$35</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WhatsApp Sender -->
+            <div class="pricing-category">
+                <h2 class="category-title" data-key="whatsapp_sender">مرسل WhatsApp</h2>
+                <p class="category-description" data-key="whatsapp_pricing_desc">أدوات التسويق الشاملة عبر واتساب مع أكواد التفعيل والدعم الفني</p>
+                
+                <div class="whatsapp-special">
+                    <!-- Messages Section -->
+                    <div class="whatsapp-section">
+                        <h4>باقات الرسائل</h4>
+                        <div class="price-row">
+                            <div class="service-name">8,000 رسالة</div>
+                            <div class="price-cell" data-service="whatsapp8k">350 جنيه</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="service-name">25,000 رسالة</div>
+                            <div class="price-cell" data-service="whatsapp25k">650 جنيه</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="service-name">60,000 رسالة</div>
+                            <div class="price-cell" data-service="whatsapp60k">1200 جنيه</div>
+                        </div>
+                    </div>
+
+                    <!-- Activation Codes Section -->
+                    <div class="whatsapp-section">
+                        <h4>أكواد التفعيل</h4>
+                        <div class="price-row">
+                            <div class="service-name" data-key="one_month">شهر واحد</div>
+                            <div class="price-cell" data-service="whatsappActivationMonth">300 جنيه</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="service-name" data-key="one_year">سنة واحدة</div>
+                            <div class="price-cell" data-service="whatsappActivationYear">700 جنيه</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="service-name" data-key="lifetime">مدى الحياة</div>
+                            <div class="price-cell" data-service="whatsappActivationLifetime">1500 جنيه</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="service-name" data-key="key_maker_guide">دليل صانع المفاتيح</div>
+                            <div class="price-cell" data-service="whatsappKeyMaker">2000 جنيه</div>
+                        </div>
+                    </div>
+
+                    <!-- Private Session Section -->
+                    <div class="whatsapp-section">
+                        <h4>الجلسة الخاصة</h4>
+                        <div class="price-row">
+                            <div class="service-name">60 دقيقة عبر AnyDesk</div>
+                            <div class="price-cell" data-service="privateSession">300 جنيه</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="service-name">تدريب شخصي</div>
+                            <div class="price-cell">500 جنيه</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="service-name">إعداد كامل للبرنامج</div>
+                            <div class="price-cell">400 جنيه</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section-pricing">
+        <div class="container">
+            <h2 data-key="ready_to_start">جاهز للبدء؟</h2>
+            <p data-key="contact_pricing_desc">تواصل معنا الآن لطلب أي خدمة أو للاستفسار عن العروض الخاصة</p>
+            
+            <div class="contact-buttons-pricing">
+                <a href="https://wa.me/966578786646" target="_blank" class="contact-btn-pricing" style="background: #25d366;">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>واتساب +966578786646</span>
+                </a>
+                <a href="https://t.me/itoluf0" target="_blank" class="contact-btn-pricing" style="background: #0088cc;">
+                    <i class="fab fa-telegram"></i>
+                    <span>تليجرام @itoluf0</span>
+                </a>
+                <a href="https://tiktok.com/@itoluf0" target="_blank" class="contact-btn-pricing" style="background: #000000;">
+                    <i class="fab fa-tiktok"></i>
+                    <span>تيك توك @itoluf0</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Include the same translations and functionality from script.js
+        const translations = {
+            ar: {
+                back_to_home: "العودة للرئيسية",
+                pricing_title: "جدول الأسعار الكامل",
+                pricing_hero_desc: "أسعار شفافة وتنافسية لجميع خدماتنا الرقمية. اختر الباقة التي تناسب احتياجاتك وميزانيتك.",
+                graphic_design: "التصميم الجرافيكي",
+                graphic_design_pricing_desc: "تصاميم احترافية مخصصة لعلامتك التجارية ومشاريعك",
+                canva_pro: "خطط Canva Pro",
+                canva_pro_pricing_desc: "احصل على إمكانيات Canva Pro الكاملة بأفضل الأسعار",
+                whatsapp_sender: "مرسل WhatsApp",
+                whatsapp_pricing_desc: "أدوات التسويق الشاملة عبر واتساب مع أكواد التفعيل والدعم الفني",
+                service_type: "نوع الخدمة",
+                plan_duration: "مدة الخطة",
+                logo_design: "تصميم شعار",
+                social_media_design: "تصميم وسائل التواصل",
+                business_card: "كارت شخصي",
+                flyer_design: "فلاير إعلاني",
+                one_month: "شهر واحد",
+                one_year: "سنة واحدة",
+                three_years: "3 سنوات",
+                lifetime: "مدى الحياة",
+                reseller_panel: "لوحة الموزع (500 مستخدم)",
+                key_maker_guide: "دليل صانع المفاتيح",
+                ready_to_start: "جاهز للبدء؟",
+                contact_pricing_desc: "تواصل معنا الآن لطلب أي خدمة أو للاستفسار عن العروض الخاصة"
+            },
+            en: {
+                back_to_home: "Back to Home",
+                pricing_title: "Complete Pricing Table",
+                pricing_hero_desc: "Transparent and competitive pricing for all our digital services. Choose the package that fits your needs and budget.",
+                graphic_design: "Graphic Design",
+                graphic_design_pricing_desc: "Professional custom designs for your brand and projects",
+                canva_pro: "Canva Pro Plans",
+                canva_pro_pricing_desc: "Get full Canva Pro capabilities at the best prices",
+                whatsapp_sender: "WhatsApp Sender",
+                whatsapp_pricing_desc: "Comprehensive WhatsApp marketing tools with activation codes and technical support",
+                service_type: "Service Type",
+                plan_duration: "Plan Duration",
+                logo_design: "Logo Design",
+                social_media_design: "Social Media Design",
+                business_card: "Business Card",
+                flyer_design: "Flyer Design",
+                one_month: "1 Month",
+                one_year: "1 Year",
+                three_years: "3 Years",
+                lifetime: "Lifetime",
+                reseller_panel: "Reseller Panel (500 users)",
+                key_maker_guide: "Key Maker Guide",
+                ready_to_start: "Ready to Start?",
+                contact_pricing_desc: "Contact us now to order any service or inquire about special offers"
+            }
+        };
+
+        const servicePrices = {
+            graphicDesign: { EGP: 50, SAR: 10, USD: 5 },
+            canvaProMonth: { EGP: 30, SAR: 2.99, USD: 1 },
+            canvaProYear: { EGP: 80, SAR: 6.99, USD: 3 },
+            canvaProThreeYear: { EGP: 120, SAR: 9.99, USD: 5 },
+            canvaProLifetime: { EGP: 150, SAR: 14.99, USD: 7 },
+            canvaProReseller: { EGP: 1300, SAR: 100, USD: 35 },
+            whatsapp8k: { EGP: 350, SAR: 30, USD: 8 },
+            whatsapp25k: { EGP: 650, SAR: 60, USD: 16 },
+            whatsapp60k: { EGP: 1200, SAR: 120, USD: 32 },
+            whatsappActivationMonth: { EGP: 300, SAR: 30, USD: 8 },
+            whatsappActivationYear: { EGP: 700, SAR: 60, USD: 16 },
+            whatsappActivationLifetime: { EGP: 1500, SAR: 150, USD: 40 },
+            whatsappKeyMaker: { EGP: 2000, SAR: 200, USD: 55 },
+            privateSession: { EGP: 300, SAR: 38, USD: 10 }
+        };
+
+        let currentLanguage = 'ar';
+        let currentCurrency = 'EGP';
+        let currentTheme = 'light';
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeControls();
+            updateLanguage();
+            updatePricing();
+            updateTheme();
+        });
+
+        function initializeControls() {
+            const languageSelect = document.getElementById('languageSelect');
+            const currencySelect = document.getElementById('currencySelect');
+            const themeToggle = document.getElementById('themeToggle');
+            
+            languageSelect.addEventListener('change', function() {
+                currentLanguage = this.value;
+                updateLanguage();
+            });
+            
+            currencySelect.addEventListener('change', function() {
+                currentCurrency = this.value;
+                updatePricing();
+            });
+            
+            themeToggle.addEventListener('click', function() {
+                currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+                updateTheme();
+            });
+        }
+
+        function updateLanguage() {
+            const isRTL = currentLanguage === 'ar';
+            document.documentElement.setAttribute('lang', currentLanguage);
+            document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+            
+            const translatableElements = document.querySelectorAll('[data-key]');
+            translatableElements.forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLanguage] && translations[currentLanguage][key]) {
+                    element.textContent = translations[currentLanguage][key];
+                }
+            });
+        }
+
+        function updatePricing() {
+            const priceElements = document.querySelectorAll('[data-service]');
+            priceElements.forEach(element => {
+                const service = element.getAttribute('data-service');
+                if (servicePrices[service] && servicePrices[service][currentCurrency]) {
+                    const price = servicePrices[service][currentCurrency];
+                    element.textContent = formatPrice(price, currentCurrency);
+                }
+            });
+        }
+
+        function formatPrice(price, currency) {
+            const symbols = { EGP: 'جنيه', SAR: 'ريال', USD: '$' };
+            return currency === 'USD' ? `${symbols[currency]}${price}` : `${price} ${symbols[currency]}`;
+        }
+
+        function updateTheme() {
+            document.body.setAttribute('data-theme', currentTheme);
+            const themeIcon = document.querySelector('#themeToggle i');
+            themeIcon.className = currentTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+    </script>
+</body>
+</html>
