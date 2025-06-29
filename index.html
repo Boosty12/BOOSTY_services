@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boosty - Professional Digital Services | Graphic Design & Marketing Solutions</title>
+    <meta name="description" content="Boosty - Professional Graphic Design, Canva Pro, WhatsApp Sender services by Abdelrhman Elkholy. Comprehensive digital solutions for businesses worldwide.">
+    <meta name="keywords" content="graphic design, canva pro, whatsapp automation, digital marketing, professional services, business solutions">
+    <meta name="author" content="Abdelrhman Elkholy">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boosty.replit.app/">
+    <meta property="og:title" content="Boosty - Professional Digital Services">
+    <meta property="og:description" content="Professional Graphic Design, Canva Pro, WhatsApp Sender services. Comprehensive digital solutions for businesses worldwide.">
+    <meta property="og:image" content="https://boosty.replit.app/assets/og-image.jpg">
+    <meta property="og:site_name" content="Boosty">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://boosty.replit.app/">
+    <meta property="twitter:title" content="Boosty - Professional Digital Services">
+    <meta property="twitter:description" content="Professional Graphic Design, Canva Pro, WhatsApp Sender services. Comprehensive digital solutions for businesses worldwide.">
+    <meta property="twitter:image" content="https://boosty.replit.app/assets/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect for better performance -->
+    <link rel="preconnect" href="https://ipapi.co">
+    <link rel="dns-prefetch" href="//wa.me">
+    <link rel="dns-prefetch" href="//t.me">
+    <link rel="dns-prefetch" href="//facebook.com">
+    <link rel="dns-prefetch" href="//tiktok.com">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Boosty",
+        "description": "Professional digital services including graphic design, Canva Pro access, and WhatsApp automation solutions",
+        "url": "https://boosty.replit.app",
+        "logo": "https://boosty.replit.app/assets/logo.png",
+        "founder": {
+            "@type": "Person",
+            "name": "Abdelrhman Elkholy"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+966578786646",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Arabic"]
+        },
+        "sameAs": [
+            "https://www.facebook.com/share/16r891HT21/",
+            "https://tiktok.com/@boosty121",
+            "https://t.me/boosty0"
+        ],
+        "service": [
+            {
+                "@type": "Service",
+                "name": "Graphic Design",
+                "description": "Professional graphic design services including logos, branding, and marketing materials"
+            },
+            {
+                "@type": "Service", 
+                "name": "Canva Pro Access",
+                "description": "Premium Canva Pro subscriptions with access to all premium features and templates"
+            },
+            {
+                "@type": "Service",
+                "name": "WhatsApp Sender",
+                "description": "Professional WhatsApp automation and bulk messaging services"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Performance monitoring -->
+    <script>
+        window.performance && window.performance.mark && window.performance.mark('head-end');
+    </script>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle" role="button" tabindex="0" aria-label="Toggle theme">
+        <i class="fas fa-sun" id="themeIcon"></i>
+    </div>
+
+    <!-- Language Toggle -->
+    <div class="language-toggle premium" id="languageToggle">
+        <div class="language-wrapper">
+            <i class="fas fa-globe language-icon"></i>
+            <div class="language-selector">
+                <span class="lang-option active" data-lang="en" role="button" tabindex="0">
+                    <span class="flag-icon">🇺🇸</span>
+                    <span class="lang-text">English</span>
+                </span>
+                <span class="lang-divider"></span>
+                <span class="lang-option" data-lang="ar" role="button" tabindex="0">
+                    <span class="flag-icon">🇸🇦</span>
+                    <span class="lang-text">العربية</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <h1 class="brand-name">
+                        <span class="letter-b">B</span>oosty
+                    </h1>
+                    <p class="brand-subtitle" data-key="By Abdelrhman Elkholy">By Abdelrhman Elkholy</p>
+                </div>
+                <nav class="nav" role="navigation">
+                    <a href="#services" class="nav-link" data-key="Services">Services</a>
+                    <a href="#pricing" class="nav-link" data-key="Pricing">Pricing</a>
+                    <a href="#contact" class="nav-link" data-key="Contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title" data-key="Professional Services That Boost Your Business">
+                    Professional Services That Boost Your Business
+                </h2>
+                <p class="hero-description" data-key="Get premium graphic design, Canva Pro access, WhatsApp automation, and more with our comprehensive service package.">
+                    Get premium graphic design, Canva Pro access, WhatsApp automation, and more with our comprehensive service package.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="smoothScroll('services')" data-key="Explore Services">
+                        Explore Services
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-key="Our Services">Our Services</h2>
+            <div class="services-grid">
+                <!-- Graphic Design Card -->
+                <div class="service-card" data-service="graphic-design">
+                    <div class="card-header">
+                        <i class="fas fa-palette card-icon"></i>
+                        <h3 class="card-title" data-key="Graphic Design">Graphic Design</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description" data-key="Professional graphic design services including logos, branding, social media posts, and marketing materials.">
+                            Professional graphic design services including logos, branding, social media posts, and marketing materials.
+                        </p>
+                        <div class="card-price">
+                            <span class="price-label" data-key="Starting from">Starting from</span>
+                            <span class="price-amount" data-service-price="graphic-design">$7</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/966578786646?text=Hi! I'm interested in Graphic Design services" class="social-btn whatsapp-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/abdelrhman.elkholy" class="social-btn facebook-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://t.me/itoluf0" class="social-btn telegram-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@itoluf0" class="social-btn tiktok-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Canva Pro Card -->
+                <div class="service-card" data-service="canva-pro">
+                    <div class="card-header">
+                        <i class="fas fa-magic card-icon"></i>
+                        <h3 class="card-title" data-key="Canva Pro">Canva Pro</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description" data-key="Get access to Canva Pro with premium templates, stock photos, and advanced design tools for your creative projects.">
+                            Get access to Canva Pro with premium templates, stock photos, and advanced design tools for your creative projects.
+                        </p>
+                        <div class="card-price">
+                            <span class="price-label" data-key="Starting from">Starting from</span>
+                            <span class="price-amount" data-service-price="canva-pro">$0.8</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/966578786646?text=Hi! I'm interested in Canva Pro access" class="social-btn whatsapp-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/abdelrhman.elkholy" class="social-btn facebook-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://t.me/itoluf0" class="social-btn telegram-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@itoluf0" class="social-btn tiktok-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Sender Card -->
+                <div class="service-card" data-service="whatsapp-sender">
+                    <div class="card-header">
+                        <i class="fab fa-whatsapp card-icon"></i>
+                        <h3 class="card-title" data-key="WhatsApp Sender">WhatsApp Sender</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description" data-key="Automated WhatsApp messaging solutions for marketing campaigns, customer support, and bulk messaging services.">
+                            Automated WhatsApp messaging solutions for marketing campaigns, customer support, and bulk messaging services.
+                        </p>
+                        <div class="card-price">
+                            <span class="price-label" data-key="Starting from">Starting from</span>
+                            <span class="price-amount" data-service-price="whatsapp-sender">$3</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/966578786646?text=Hi! I'm interested in WhatsApp Sender services" class="social-btn whatsapp-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/abdelrhman.elkholy" class="social-btn facebook-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://t.me/itoluf0" class="social-btn telegram-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@itoluf0" class="social-btn tiktok-btn" target="_blank" rel="noopener">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Designer Library Card -->
+                <div class="service-card coming-soon" data-service="designer-library">
+                    <div class="card-header">
+                        <i class="fas fa-book card-icon"></i>
+                        <h3 class="card-title" data-key="Designer Library">Designer Library</h3>
+                        <span class="coming-soon-badge" data-key="Coming Soon">Coming Soon</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description" data-key="Comprehensive library of design resources, templates, fonts, and creative assets for professional designers.">
+                            Comprehensive library of design resources, templates, fonts, and creative assets for professional designers.
+                        </p>
+                        <div class="card-price">
+                            <span class="price-label" data-key="Price">Price</span>
+                            <span class="price-amount" data-key="TBA">TBA</span>
+                        </div>
+                    </div>
+                    <div class="card-actions disabled">
+                        <span class="social-btn disabled-btn">
+                            <i class="fab fa-whatsapp"></i>
+                        </span>
+                        <span class="social-btn disabled-btn">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                        <span class="social-btn disabled-btn">
+                            <i class="fab fa-telegram"></i>
+                        </span>
+                        <span class="social-btn disabled-btn">
+                            <i class="fab fa-tiktok"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-key="Transparent Pricing">Transparent Pricing</h2>
+            <div class="currency-info">
+                <p class="currency-text">
+                    <span data-key="Prices automatically adjusted based on your location">Prices automatically adjusted based on your location</span>
+                </p>
+                <div class="currency-display">
+                    <span data-key="Current Currency:">Current Currency:</span>
+                    <span class="current-currency" id="currentCurrency">USD</span>
+                </div>
+                
+                <!-- Currency Selector -->
+                <div class="currency-selector">
+                    <button class="currency-btn" data-currency="EGP">
+                        <span>🇪🇬 EGP</span>
+                    </button>
+                    <button class="currency-btn" data-currency="SAR">
+                        <span>🇸🇦 SAR</span>
+                    </button>
+                    <button class="currency-btn" data-currency="USD">
+                        <span>🇺🇸 USD</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Pricing Tables will be dynamically generated -->
+            <div class="pricing-tables" id="pricingTables">
+                <!-- Pricing content will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="count-up">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label" data-key="Projects Completed">Projects Completed</div>
+                </div>
+                <div class="stat-item" data-aos="count-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label" data-key="Happy Clients">Happy Clients</div>
+                </div>
+                <div class="stat-item" data-aos="count-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label" data-key="Countries Served">Countries Served</div>
+                </div>
+                <div class="stat-item" data-aos="count-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label" data-key="Client Satisfaction %">Client Satisfaction %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title" data-key="Stay Updated">Stay Updated</h2>
+                    <p class="newsletter-description" data-key="Subscribe to our newsletter for the latest updates, special offers, and design inspiration.">
+                        Subscribe to our newsletter for the latest updates, special offers, and design inspiration.
+                    </p>
+                </div>
+                <div class="newsletter-form">
+                    <form class="subscribe-form" id="subscribeForm">
+                        <div class="form-group">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email" data-key="Enter your email" required>
+                            <button type="submit" class="newsletter-btn" data-key="Subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                        <div class="privacy-notice">
+                            <small data-key="We respect your privacy. Unsubscribe at any time.">
+                                We respect your privacy. Unsubscribe at any time.
+                            </small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-key="Get In Touch">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-key="Contact Information">Contact Information</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-header">
+                                <i class="fab fa-whatsapp contact-icon"></i>
+                                <span class="method-name" data-key="WhatsApp">WhatsApp</span>
+                            </div>
+                            <a href="https://wa.me/966578786646" class="method-link" target="_blank" rel="noopener" data-key="Visit Page">Visit Page</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-header">
+                                <i class="fab fa-telegram contact-icon"></i>
+                                <span class="method-name" data-key="Telegram">Telegram</span>
+                            </div>
+                            <a href="https://t.me/boosty0" class="method-link" target="_blank" rel="noopener" data-key="Visit Page">Visit Page</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-header">
+                                <i class="fab fa-tiktok contact-icon"></i>
+                                <span class="method-name" data-key="TikTok">TikTok</span>
+                            </div>
+                            <a href="https://tiktok.com/@boosty121" class="method-link" target="_blank" rel="noopener" data-key="Visit Page">Visit Page</a>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-header">
+                                <i class="fab fa-facebook contact-icon"></i>
+                                <span class="method-name" data-key="Facebook">Facebook</span>
+                            </div>
+                            <a href="https://www.facebook.com/share/16r891HT21/" class="method-link" target="_blank" rel="noopener" data-key="Visit Page">Visit Page</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quick-message">
+                    <h3 data-key="Quick Message">Quick Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="userName" name="name" placeholder="Your Name" data-key="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="userEmail" name="email" placeholder="Your Email" data-key="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="serviceSelect" name="service" required>
+                                <option value="" data-key="Select Service">Select Service</option>
+                                <option value="graphic-design" data-key="Graphic Design">Graphic Design</option>
+                                <option value="canva-pro" data-key="Canva Pro">Canva Pro</option>
+                                <option value="whatsapp-sender" data-key="WhatsApp Sender">WhatsApp Sender</option>
+                                <option value="other" data-key="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="userMessage" name="message" placeholder="Your Message" data-key="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-key="Send Message">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">Boosty</h3>
+                    <p class="footer-description" data-key="Professional services that boost your business">
+                        Professional services that boost your business
+                    </p>
+                </div>
+                <div class="footer-bottom">
+                    <p class="copyright" data-key="© 2025 Boosty. Owned by Abdelrhman Elkholy. All rights reserved.">
+                        © 2025 Boosty. Owned by Abdelrhman Elkholy. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p data-key="We use cookies to enhance your browsing experience and provide personalized content.">
+                    We use cookies to enhance your browsing experience and provide personalized content. By continuing to use our site, you agree to our cookie policy.
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button class="btn btn-secondary" id="cookieReject" data-key="Reject">Reject</button>
+                <button class="btn btn-primary" id="cookieAccept" data-key="Accept">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <h3 class="mobile-menu-title">Menu</h3>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="#services" class="mobile-nav-link" data-key="Services">Services</a>
+                <a href="#pricing" class="mobile-nav-link" data-key="Pricing">Pricing</a>
+                <a href="#contact" class="mobile-nav-link" data-key="Contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            if (window.performance && window.performance.timing) {
+                const timing = window.performance.timing;
+                const pageLoadTime = timing.loadEventEnd - timing.navigationStart;
+                const domContentLoaded = timing.domContentLoadedEventEnd - timing.navigationStart;
+                
+                console.log('Page Load Time:', pageLoadTime + 'ms');
+                console.log('DOM Content Loaded:', domContentLoaded + 'ms');
+            }
+        });
+
+        // Basic error tracking
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript Error:', e.error);
+        });
+
+        // Track page sections in view
+        const observeSection = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const sectionId = entry.target.id;
+                    console.log('Section in view:', sectionId);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        // Observe all sections
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('section[id]').forEach(section => {
+                observeSection.observe(section);
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
